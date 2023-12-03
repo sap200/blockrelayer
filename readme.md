@@ -1,4 +1,5 @@
-## Relayer for Asset Transfer Between Sepolia Blockchain and EVM XRPL Sidechain
+## Block Relayer 
+### For Asset Transfer Between Sepolia Blockchain and EVM XRPL Sidechain
 
 ### Introduction
 This project introduces a relayer designed to seamlessly facilitate asset transfers between the Sepolia blockchain and an EVM-compatible XRPL (XRP Ledger) sidechain. By listening to events from smart contracts, the relayer efficiently processes and relays information, ensuring smooth and secure cross-chain transactions.
@@ -23,7 +24,7 @@ Guidelines on setting up and running the relayer locally:
 ## Configuration
 - deploy the Minter and Locker Smart contract in EVM XRPL compatible sidechain and sepolia chain respectively.
 - Fill in these details in env/env.go
-```
+```go
 const (
 	LOCKER_CONTRACT_ADDRESS                              = "<<LOCKER CONTRACT ADDRESS>>"                       // locker is deployed on Ethereum goerli testnet
 	MINTER_CONTRACT_ADDRESS                              = "<<MINTER CONTRACT ADDRESS>>"                       // minter is on EVM XRPL sidechain
